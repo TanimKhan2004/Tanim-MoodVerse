@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <button id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+    <button class="menu-btn" onclick="toggleMenu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </button>
+
+       <!-- Hidden menu options -->
+       <div class="menu">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+
+    <div class="background-video">
+      <video autoplay muted loop id="background-video">
+        <source src="video1.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Other content goes here -->
+    </div>
+
+  </body>
+</html>
+
+<script>
+  function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.style.left = (menu.style.left === '0px') ? '-200px' : '0px';
+  }
+</script>

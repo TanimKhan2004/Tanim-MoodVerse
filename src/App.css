@@ -1,0 +1,168 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 100px;
+  height: 100%;
+  overflow: hidden; 
+}
+
+div#root {
+  height: 100%; 
+}
+
+.App {
+  font-family: "Lato", sans-serif;
+  max-width: 75rem;
+  margin: auto;
+  height: 100%;
+}
+
+
+/* body {
+  /* background-image: url(background.avif);
+  backdrop-filter: blur(3px); */
+  /* background-video
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 100vh;  */
+
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backdrop-filter: blur(10px);
+  z-index: -1; 
+  
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.App-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center; /* Center the text within the container */
+  white-space: nowrap; /* Prevent the links from wrapping */
+}
+
+.nav-link {
+  display: inline-block; /* Display links as inline-block for centering and to keep them in a row */
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 25px 14px 16px;
+  text-decoration: none;
+}
+
+/* Optional: Ensure there's enough width for the container */
+body {
+  width: 100%;
+  margin: 0;
+}
+
+.App-bottom-nav {
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.registration{
+  margin: 10px 10px auto;
+  min-width: 50%;
+  padding: 10px;
+  height:100%;
+}
+
+.labelText {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .App{
+    height:auto;
+  }
+
+  .App-main{
+    height:auto;
+  }
+  .sidebar {
+      min-width: 100%;
+      height: auto;
+  }
+
+  .registration{
+    min-width:90%;
+    font-size:smaller;
+    height:auto;
+  }
+
+}
+  .App-bottom-nav {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px; /* Add padding for better visual appearance, adjust as needed */
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2; /* Ensure the button is above the video */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: left 0.3s ease;
+    overflow: hidden;
+    padding-top: 60px; /* Adjust top padding based on the height of your button */
+  }
+  
+  .menu a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  

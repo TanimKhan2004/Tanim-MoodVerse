@@ -1,0 +1,81 @@
+/* Location.css */
+
+/* Transparent box styling */
+.LocationContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7); /* Use rgba for transparency */
+    padding: 20px;
+    border-radius: 70px; /* Round corners */
+    height: 530px;
+    width: 600px; /* Set your desired width */
+    margin: auto; /* Center the box horizontally */
+    margin-top: 60px;
+    text-align: center; /* Center text */
+  }
+  
+  /* Title styling */
+  .LocationTitle {
+    font-size: 25px;
+    font-weight: bold; /* Add margin below the title for spacing */
+    position: relative;
+    margin-bottom: 35px; /* Needed for absolute positioning of the underline */
+    margin-top: 7px;
+  }
+  
+  /* Underline styling */
+  .LocationTitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px; /* Set the width of the underline */
+    height: 2px;
+    background-color: #000; /* Set the color of the underline */
+  }
+  
+  /* Additional styles for customizing each label, input, and button */
+  .InputGroup {
+    margin-bottom: 20px; /* Add spacing between input groups */
+  }
+  
+  .InputLabel {
+    display: inline-block;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+  
+    /* Add any other label styles here */
+  }
+  
+  .InputBox {
+    width: 500px; /* Adjust the width to fit the container */
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  
+    /* Add any other input styles here */
+  }
+  
+  .SubmitButton {
+    background-color: #000000;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 400px;
+    display: inline;
+    text-align: center;
+    margin-left: 100px;
+  
+    /* Add any other button styles here */
+  }
+  
